@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+mainClassName = 'Main'
+
+repositories {
+    mavenCentral()
+}
+
+project.ext {
+    jettyVersion = '8.0.1.v20110908'
+}
+
+dependencies {
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: project.jettyVersion
+    compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: project.jettyVersion
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: project.jettyVersion
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": mainClassName)
+    }
+    from files("src/main/webapp")
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+run {
+    systemProperty "dev", "true"
+}
