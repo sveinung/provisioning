@@ -12,3 +12,8 @@ The infrastructure is to be provisioned with the following:
   1. Service scripts
   2. Deploy scripts
 
+The provisionings
+-----------------
+
+* [Bash](https://github.com/sveinung/provisioning/tree/bash)
+
