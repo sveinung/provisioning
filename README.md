@@ -15,5 +15,5 @@ The infrastructure is to be provisioned with the following:
 The provisionings
 -----------------
 
-* [Bash](https://github.com/sveinung/provisioning/tree/bash)
+* [Bash](https://github.com/sveinung/provisioning/bash/infrastructure)
 
