@@ -5,3 +5,5 @@ function _nginx {
 
   sudo service nginx restart
 }
+
+source reverse-proxy.sh

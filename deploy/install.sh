@@ -1,10 +1,8 @@
 #!/bin/bash
 
-pushd /vagrant/
-
 source deploy/app-constants.sh
 
-APP_JAR="/vagrant/build/libs/${APP_NAME}.jar"
+APP_JAR="/home/vagrant/${APP_NAME}.jar"
 APP_LIB_DIR="${APP_LOCATION}/lib"
 
 echo "Create app folder"
@@ -27,6 +25,4 @@ fi
 
 sleep 5
 sudo service app start
-
-popd
 
