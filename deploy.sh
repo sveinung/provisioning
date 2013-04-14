@@ -1,5 +1,10 @@
 #!/bin/bash
-scp -P 2200 build/libs/app.jar vagrant@localhost:/home/vagrant/
-scp -P 2200 -r deploy/ vagrant@localhost:/home/vagrant
-ssh -p 2200 -t vagrant@localhost "deploy/install.sh"
+
+USER=vagrant
+HOST=localhost
+PORT=2200
+
+scp -P $PORT build/libs/app.jar $USER@$HOST:/home/vagrant/
+scp -P $PORT -r deploy/ $USER@$HOST:/home/vagrant
+ssh -p $PORT -t $USER@$HOST "deploy/install.sh"
 
