@@ -1,7 +1,4 @@
-require('shelljs/global');
-var _  = require('underscore');
-_.str = require('underscore.string');
-_.mixin(_.str.exports());
+var nodes = require('./provisioner/nodes');
 
 console.log("Provisioning with JavaScript");
 
@@ -14,8 +11,3 @@ nodes({
   }
 });
 
-function nodes(hosts) {
-  var hostname = _.trim(exec('hostname').output);
-  var currentNode = hosts[hostname];
-  currentNode();
-}
