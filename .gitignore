@@ -4,3 +4,5 @@
 .gradle/
 build/
 *.iml
+javascript/infrastructure/node_modules/
+

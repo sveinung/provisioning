@@ -4,7 +4,7 @@ pushd /vagrant/javascript/infrastructure
 
 source prerequisites.sh
 
-./setup.js
+node setup.js
 
 popd
 

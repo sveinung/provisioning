@@ -1,5 +1,3 @@
-#!/usr/bin/shjs
-
 require('shelljs/global');
 var _  = require('underscore');
 _.str = require('underscore.string');
