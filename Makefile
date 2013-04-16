@@ -1,7 +1,7 @@
 upJavascript:
 	PROV=javascript vagrant up
 
-javascript:
+provisionJavascript:
 	PROV=javascript vagrant provision
 
 destroyJavascript:
