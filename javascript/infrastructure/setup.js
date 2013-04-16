@@ -1,5 +1,5 @@
 var nodes = require('./provisioner/nodes');
-var package = require('./provisioner/package');
+var pkg = require('./provisioner/pkg');
 
 console.log("Provisioning with JavaScript");
 
@@ -10,7 +10,7 @@ nodes({
   'node1.lan': function() {
     console.log("Node 1");
 
-    package({
+    pkg({
       name: 'openjdk-7-jre-headless',
       version: '7u15-2.3.7*'
     });
