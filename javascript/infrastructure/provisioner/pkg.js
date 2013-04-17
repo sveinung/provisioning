@@ -10,9 +10,9 @@ module.exports = function(options) {
   var result = exec(command);
 
   if (result.code === 0) {
-    console.log('Installed ', options.name, ' successfully');
+    console.log('Installed', options.name, 'successfully');
   } else {
-    console.log('Installing ', options.name, ' failed');
+    console.log('Installing', options.name, 'failed');
   }
 };
 
