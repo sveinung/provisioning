@@ -9,7 +9,8 @@ var nginx = function() {
 
   file({
     name: '/etc/nginx/nginx.conf',
-    source: __dirname + '/nginx.conf'
+    source: __dirname + '/nginx.conf',
+    mode: '644'
   });
 };
 
