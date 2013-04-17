@@ -8,6 +8,10 @@ var file = function(options) {
     exec('chown ' + options.owner + ' ' + options.name);
   }
 
+  if (!_.isUndefined(options.group)) {
+    exec('chown :' + options.group + ' ' + options.name);
+  }
+
   if (!_.isUndefined(options.mode)) {
     chmod(options.mode, options.name);
   }

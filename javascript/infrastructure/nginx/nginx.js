@@ -11,7 +11,8 @@ var nginx = function() {
     name: '/etc/nginx/nginx.conf',
     source: __dirname + '/nginx.conf',
     mode: '644',
-    owner: 'root'
+    owner: 'root',
+    group: 'root'
   });
 };
 
