@@ -16,4 +16,4 @@ The provisionings
 -----------------
 
 * [Bash](https://github.com/sveinung/provisioning/tree/master/bash/infrastructure)
-
+* [JavaScript](https://github.com/sveinung/provisioning/tree/master/javascript/infrastructure)
